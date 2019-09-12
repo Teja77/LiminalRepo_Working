@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: cloud twirl
+  m_Shader: {fileID: -6465566751694194690, guid: f8f71080869be4a4fbffb69a331746cf,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_103DDBD6:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C01952DB:
+        m_Texture: {fileID: 2800000, guid: 82c211cd7b28abb4a9e4ee77e8bd1b03, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C89D2A0:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5C2338EB_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 30ec70ef60a2bb54ea2df6f72c77bdc6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_EFFADCE8_Out_0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1275FFC9: 1
+    - Vector1_12A18B99: 10
+    - Vector1_1DA0EA0C: 2
+    - Vector1_1E45075F: 0.1
+    - Vector1_3858C1C7: 1
+    - Vector1_39A342F: -0.01
+    - Vector1_649184A1: 100
+    - Vector1_6C200834: 20
+    - Vector1_7B69B87E: 3
+    - Vector1_859280B2: 2.5
+    - Vector1_99F2E264: 57.3
+    - Vector1_B63520E2: 0.1
+    - Vector1_C33BD916: 9.83
+    - Vector1_E2874150: 0
+    - Vector1_F3014E75: 10000
+    m_Colors:
+    - Color_670729C: {r: 0.572, g: 0.572, b: 0.572, a: 1}
+    - Color_6ECF2136: {r: 0.6903841, g: 0.3549617, b: 0.3549617, a: 1}
+    - Color_ED687636: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
+    - Vector2_11496D58: {r: 5, g: 5, b: 0, a: 0}
+    - Vector2_25BCAF74: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - Vector2_62FB4875: {r: 0.1, g: -0.5, b: 0, a: 0}
+    - Vector2_D99B290F: {r: 0, g: 0.5, b: 0, a: 0}

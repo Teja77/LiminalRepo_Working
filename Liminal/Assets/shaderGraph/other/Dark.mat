@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Dark
+  m_Shader: {fileID: -6465566751694194690, guid: 61975784757252f4ab1f3f2389915fdc,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_240BBC10: 3.7
+    - Vector1_2AEABEA3: 1
+    - Vector1_44224D78: 0.102
+    - Vector1_96E40736: 20
+    m_Colors:
+    - Color_3FB25CBB: {r: 1.6778904, g: 1.6778904, b: 1.6778904, a: 0.16862746}
+    - Color_F3FB5989: {r: 0.5849056, g: 0.2896938, b: 0.2896938, a: 0.9647059}
+    - Vector2_1DE0497C: {r: 0, g: 1, b: 0, a: 0}
+    - Vector2_3B339A7F: {r: 10, g: 10, b: 0, a: 0}
+    - Vector2_3F57C465: {r: 0, g: -0.2, b: 0, a: 0}
+    - Vector2_5B155B9C: {r: 0, g: 0, b: 0, a: 0}
