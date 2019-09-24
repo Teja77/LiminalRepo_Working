@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Leaves_3
-  m_Shader: {fileID: -6465566751694194690, guid: 8db7727f141a2e24ead33bebece3ac2e,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 8f822a7ef43cfb44f80443f91a29700a, type: 3}
   m_ShaderKeywords: EFFECT_HUE_VARIATION GEOM_TYPE_LEAF _WINDQUALITY_FAST
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 1
@@ -62,8 +61,8 @@ Material:
     - Vector1_F5FDBD7C: 0
     - _BillboardKwToggle: 0
     - _BillboardShadowFade: 0
-    - _Cull: 1
-    - _Cutoff: 0.33
+    - _Cull: 0
+    - _Cutoff: 0.067
     - _Glossiness: 0
     - _HueVariationKwToggle: 1
     - _Metallic: 0.573
@@ -75,7 +74,7 @@ Material:
     - _TwoSided: 0
     - _WindQuality: 2
     m_Colors:
-    - Vector3_CD0D6A66: {r: 0, g: 1, b: 0, a: 0}
+    - Vector3_CD0D6A66: {r: 0, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
     - _HueVariationColor: {r: 1, g: 1, b: 1, a: 1}
