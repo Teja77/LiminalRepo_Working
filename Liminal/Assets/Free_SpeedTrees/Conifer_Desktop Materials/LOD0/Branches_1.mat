@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Branches_1
-  m_Shader: {fileID: -6465566751694194690, guid: 8f5e94d0747aa1d4cb8c81451d231599,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 8f822a7ef43cfb44f80443f91a29700a, type: 3}
   m_ShaderKeywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_FROND _WINDQUALITY_FAST
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 1
@@ -57,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_180AF0C2: 0
+    - Vector1_180AF0C2: 0.3
     - Vector1_495E4B9B: 1
     - Vector1_73207B57: 1
     - Vector1_CAA3BB60: 0
