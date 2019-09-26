@@ -58,7 +58,7 @@ Material:
     m_Floats:
     - Vector1_495E4B9B: 1
     - Vector1_73207B57: 0
-    - Vector1_F5FDBD7C: 0.3
+    - Vector1_F5FDBD7C: 0
     - _BillboardKwToggle: 0
     - _BillboardShadowFade: 0
     - _Cull: 0
