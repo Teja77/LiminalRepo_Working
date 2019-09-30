@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Conifer Bark Array BODT
-  m_Shader: {fileID: 4800000, guid: 8f822a7ef43cfb44f80443f91a29700a, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 8f5e94d0747aa1d4cb8c81451d231599,
+    type: 3}
   m_ShaderKeywords: _METALLICGLOSSMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
@@ -19,6 +20,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_3BF50A5:
+        m_Texture: {fileID: 2800000, guid: 802f5539a44734bfcacbe5243d44edf1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_7C209C92:
+        m_Texture: {fileID: 2800000, guid: 7292f645408434cb896aaee2fd9c2a14, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -84,6 +93,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_180AF0C2: 0
+    - Vector1_DC65BCA2: 0.01
+    - Vector1_ED3F0101: 0.1
     - _BranchWind: 0
     - _BumpScale: 1
     - _ColorContrast: 1
@@ -133,3 +145,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 0, g: 0.9, b: 0.8255172, a: 0.1}
+    - _snow_position: {r: 1, g: 0, b: 1, a: 0}

@@ -8,18 +8,24 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Conifer Leaves BODT
-  m_Shader: {fileID: 4800000, guid: 8f822a7ef43cfb44f80443f91a29700a, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 8db7727f141a2e24ead33bebece3ac2e,
+    type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHAPREMULTIPLY_ON _EMISSION _METALLICGLOSSMAP
     _NORMALMAP _SPECULARHIGHLIGHTS_OFF _WINDQUALITY_BEST
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: TreeTransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_9E29A244:
+        m_Texture: {fileID: 2800000, guid: 5597dc21a8aed4e7ba2c0f93dc4b1d98, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -92,11 +98,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_F2B0ABEA_Out_0:
+        m_Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_294CE1C3: 0.5
+    - Vector1_E55AE77E: 0.3
+    - Vector1_F5FDBD7C: 0
     - _AmbientTranslucency: 2
     - _AnimateNormal: 1
     - _BackFaceSmoothness: 1
@@ -155,6 +168,7 @@ Material:
     - _WindQuality: 4
     - _ZWrite: 0
     m_Colors:
+    - Vector3_CD0D6A66: {r: 0, g: 5, b: 0, a: 0}
     - _AdvancedEdgeBending: {r: 0.6, g: 1.3, b: 0, a: 0}
     - _AverageCol: {r: 1, g: 1, b: 1, a: 0.5}
     - _BaseWindMultipliers: {r: 0.6, g: 1, b: 1, a: 0}
