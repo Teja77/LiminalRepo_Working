@@ -60,7 +60,7 @@ public class Snow2 : MonoBehaviour
         _curSnowVal = Mathf.Clamp(_curSnowVal + (SnowDelta* multiplier), 0f, MaxSnowAmount);
         Material.SetFloat("Vector1_D5319A04", _curSnowVal);
         Material1.SetFloat("Vector1_F5FDBD7C", _curSnowVal);
-        Material2.SetFloat("Vector1_180AF0C2", _curSnowVal);
+        Material2.SetFloat("Vector1_87AA5796", _curSnowVal);
 
     }
 }

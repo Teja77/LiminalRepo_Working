@@ -30,6 +30,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 7480efe69268a814c8e19a6051f0e1f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_EBE078E4:
+        m_Texture: {fileID: 2800000, guid: 8bd7ef84d8a90f4448727837b11ba744, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -111,11 +115,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_21AA573: 1
     - Vector1_294CE1C3: 0.5
     - Vector1_3037A1E3: 10
+    - Vector1_3D448F66: 0.5
     - Vector1_96AD2792: 0
-    - Vector1_E55AE77E: 0.3
-    - Vector1_F5FDBD7C: 0
+    - Vector1_E55AE77E: 1
+    - Vector1_F12AB8EF: 0.5
+    - Vector1_F5FDBD7C: 1
     - _AmbientTranslucency: 2
     - _AnimateNormal: 1
     - _BackFaceSmoothness: 1

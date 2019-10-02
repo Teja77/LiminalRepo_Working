@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "com.liminal.sdk": "https://github.com/LiminalVR/Liminal-SDK-Unity-Package.git",
-    "com.unity.adaptiveperformance": "1.0.0",
     "com.unity.ads": "3.2.0",
     "com.unity.analytics": "3.3.2",
     "com.unity.collab-proxy": "1.2.16",
