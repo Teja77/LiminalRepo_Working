@@ -26,6 +26,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 5597dc21a8aed4e7ba2c0f93dc4b1d98, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_EB984702:
+        m_Texture: {fileID: 2800000, guid: 7480efe69268a814c8e19a6051f0e1f6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -108,6 +112,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_294CE1C3: 0.5
+    - Vector1_3037A1E3: 10
+    - Vector1_96AD2792: 0
     - Vector1_E55AE77E: 0.3
     - Vector1_F5FDBD7C: 0
     - _AmbientTranslucency: 2
@@ -168,7 +174,8 @@ Material:
     - _WindQuality: 4
     - _ZWrite: 0
     m_Colors:
-    - Vector3_CD0D6A66: {r: 0, g: 5, b: 0, a: 0}
+    - Vector2_C0187560: {r: 0, g: 0, b: 0, a: 0}
+    - Vector3_CD0D6A66: {r: 0, g: 10, b: 0, a: 0}
     - _AdvancedEdgeBending: {r: 0.6, g: 1.3, b: 0, a: 0}
     - _AverageCol: {r: 1, g: 1, b: 1, a: 0.5}
     - _BaseWindMultipliers: {r: 0.6, g: 1, b: 1, a: 0}
