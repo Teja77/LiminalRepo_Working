@@ -13,7 +13,7 @@ Material:
   m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHAPREMULTIPLY_ON _EMISSION _METALLICGLOSSMAP
     _NORMALMAP _SPECULARHIGHLIGHTS_OFF _WINDQUALITY_BEST
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap:
@@ -116,13 +116,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_21AA573: 1
-    - Vector1_294CE1C3: 0.5
+    - Vector1_294CE1C3: 0.1
     - Vector1_3037A1E3: 10
     - Vector1_3D448F66: 0.5
     - Vector1_96AD2792: 0
-    - Vector1_E55AE77E: 1
+    - Vector1_E55AE77E: 0.05
     - Vector1_F12AB8EF: 0.5
-    - Vector1_F5FDBD7C: 1
+    - Vector1_F5FDBD7C: 0.2839999
     - _AmbientTranslucency: 2
     - _AnimateNormal: 1
     - _BackFaceSmoothness: 1
