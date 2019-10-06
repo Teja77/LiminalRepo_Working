@@ -1,0 +1,171 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=6292, tid=0x0000000000002e80
+#
+# JRE version: OpenJDK Runtime Environment (8.0) (build 1.8.0-adoptopenjdk-_2018_05_19_00_59-b00)
+# Java VM: OpenJDK 64-Bit Server VM (25.71-b00 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000001781f000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_vm, id=11904, stack(0x0000000018e90000,0x0000000018f90000)]
+
+Stack: [0x0000000018e90000,0x0000000018f90000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000017823000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=13336, stack(0x0000000018f90000,0x0000000019090000)]
+=>0x000000001781f000 JavaThread "C2 CompilerThread0" daemon [_thread_in_vm, id=11904, stack(0x0000000018e90000,0x0000000018f90000)]
+  0x000000001781d800 JavaThread "Attach Listener" daemon [_thread_blocked, id=11824, stack(0x0000000018d90000,0x0000000018e90000)]
+  0x000000001781c800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=14468, stack(0x0000000018c90000,0x0000000018d90000)]
+  0x0000000017808000 JavaThread "Finalizer" daemon [_thread_blocked, id=8592, stack(0x0000000018a90000,0x0000000018b90000)]
+  0x00000000177e6800 JavaThread "Reference Handler" daemon [_thread_blocked, id=12980, stack(0x0000000018990000,0x0000000018a90000)]
+  0x0000000002be0800 JavaThread "main" [_thread_in_vm, id=2760, stack(0x0000000002a70000,0x0000000002b70000)]
+
+Other Threads:
+  0x00000000177e3800 VMThread [stack: 0x0000000018890000,0x0000000018990000] [id=7736]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000d5e00000, 0x00000000d8880000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000d5e00000,0x00000000d5ea6670,0x00000000d7e80000)
+  from space 5120K, 0% used [0x00000000d8380000,0x00000000d8380000,0x00000000d8880000)
+  to   space 5120K, 0% used [0x00000000d7e80000,0x00000000d7e80000,0x00000000d8380000)
+ ParOldGen       total 87552K, used 0K [0x0000000081a00000, 0x0000000086f80000, 0x00000000d5e00000)
+  object space 87552K, 0% used [0x0000000081a00000,0x0000000081a00000,0x0000000086f80000)
+ Metaspace       used 2077K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 222K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x00000000120a0000,0x00000000124a0000] byte_map_base: 0x0000000011c93000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005631be50
+ Begin Bits: [0x0000000012b50000, 0x0000000014ae8000)
+ End Bits:   [0x0000000014ae8000, 0x0000000016a80000)
+
+Polling page: 0x0000000000dd0000
+
+CodeCache: size=245760Kb used=432Kb max_used=434Kb free=245327Kb
+ bounds [0x0000000002ce0000, 0x0000000002f50000, 0x0000000011ce0000]
+ total_blobs=160 nmethods=0 adapters=126
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (2 events):
+Event: 0.537 Thread 0x0000000002be0800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000d5e07cb0) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hots
+Event: 0.537 Thread 0x0000000002be0800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000d5e07f98) thrown at [C:\Users\jenkins\workspace\openjdk8_build_x86-64_windows\openjdk\hotspot\src\share\vm\p
+
+Events (10 events):
+Event: 0.674 loading class sun/net/www/protocol/jar/Handler
+Event: 0.674 loading class sun/net/www/protocol/jar/Handler done
+Event: 0.674 loading class sun/misc/Launcher$AppClassLoader$1
+Event: 0.675 loading class sun/misc/Launcher$AppClassLoader$1 done
+Event: 0.675 loading class java/lang/SystemClassLoaderAction
+Event: 0.675 loading class java/lang/SystemClassLoaderAction done
+Event: 0.676 Thread 0x000000001781c800 Thread added: 0x000000001781c800
+Event: 0.676 Thread 0x000000001781d800 Thread added: 0x000000001781d800
+Event: 0.676 Thread 0x000000001781f000 Thread added: 0x000000001781f000
+Event: 0.700 Thread 0x0000000017823000 Thread added: 0x0000000017823000
+
+
+Dynamic libraries:
+0x00007ff79ee50000 - 0x00007ff79ee85000 	C:\Program Files\2019.1.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\bin\java.exe
+0x00007ffb34500000 - 0x00007ffb346f0000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb33220000 - 0x00007ffb332d2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffb31490000 - 0x00007ffb31733000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffb33e50000 - 0x00007ffb33ef3000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffb343a0000 - 0x00007ffb3443e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffb32c20000 - 0x00007ffb32cb7000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffb32d90000 - 0x00007ffb32eb0000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffb33f00000 - 0x00007ffb34093000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffb32110000 - 0x00007ffb32131000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffb33b10000 - 0x00007ffb33b36000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffb32260000 - 0x00007ffb323f4000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffb324b0000 - 0x00007ffb3254e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffb31890000 - 0x00007ffb3198a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffb224b0000 - 0x00007ffb22735000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.388_none_e6c6afa5130d5b6d\COMCTL32.dll
+0x00007ffb32ee0000 - 0x00007ffb33216000 	C:\WINDOWS\System32\combase.dll
+0x00007ffb32160000 - 0x00007ffb321e0000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffb32eb0000 - 0x00007ffb32ede000 	C:\WINDOWS\System32\IMM32.DLL
+0x00000000563a0000 - 0x0000000056472000 	C:\Program Files\2019.1.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\msvcr100.dll
+0x0000000055b50000 - 0x0000000056399000 	C:\Program Files\2019.1.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\server\jvm.dll
+0x00007ffb339d0000 - 0x00007ffb339d8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffb22760000 - 0x00007ffb22769000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffb34260000 - 0x00007ffb342cf000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffb2dd20000 - 0x00007ffb2dd44000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffb2fef0000 - 0x00007ffb2fefa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffb2dcf0000 - 0x00007ffb2dd1d000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffb321e0000 - 0x00007ffb3222a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffb2ffe0000 - 0x00007ffb2ffef000 	C:\Program Files\2019.1.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\verify.dll
+0x00007ffb2ffb0000 - 0x00007ffb2ffd9000 	C:\Program Files\2019.1.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\java.dll
+0x00007ffb2fe80000 - 0x00007ffb2fe96000 	C:\Program Files\2019.1.10f1\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\OpenJDK\Windows\jre\bin\zip.dll
+0x00007ffb332e0000 - 0x00007ffb339c5000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffb33a60000 - 0x00007ffb33b09000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffb31990000 - 0x00007ffb3210f000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffb31450000 - 0x00007ffb3146f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffb31400000 - 0x00007ffb3144a000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffb313d0000 - 0x00007ffb313e0000 	C:\WINDOWS\System32\UMPDC.dll
+0x00007ffb325e0000 - 0x00007ffb32632000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffb313e0000 - 0x00007ffb313f1000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffb32140000 - 0x00007ffb32157000 	C:\WINDOWS\System32\cryptsp.dll
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): .
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\saite\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\saite\AppData\Local\Microsoft\WindowsApps;
+USERNAME=saite
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.329)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8277532k(862516k free), swap 22245908k(4096k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.71-b00) for windows-amd64 JRE (1.8.0-adoptopenjdk-_2018_05_19_00_59-b00), built on May 19 2018 01:02:12 by "jenkins" with MS VC++ 10.0 (VS2010)
+
+time: Sat Oct 05 16:01:02 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

@@ -11,23 +11,18 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: 8db7727f141a2e24ead33bebece3ac2e,
     type: 3}
   m_ShaderKeywords: GEOM_TYPE_LEAF _ALPHAPREMULTIPLY_ON _EMISSION _METALLICGLOSSMAP
-    _NORMALMAP _SPECULARHIGHLIGHTS_OFF _WINDQUALITY_BEST
+    _NORMALMAP _SPECULARHIGHLIGHTS_OFF
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: TreeTransparentCutout
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_9E29A244:
         m_Texture: {fileID: 2800000, guid: 5597dc21a8aed4e7ba2c0f93dc4b1d98, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_EB984702:
-        m_Texture: {fileID: 2800000, guid: 7480efe69268a814c8e19a6051f0e1f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_EBE078E4:
@@ -66,15 +61,7 @@ Material:
         m_Texture: {fileID: 2800000, guid: 37fe0b5bbca93450593b8790186bf777, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DetailTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ExtraTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -102,37 +89,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SubsurfaceTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_F2B0ABEA_Out_0:
-        m_Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ca6a46a4d37514e00ae826202bad794e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_21AA573: 1
-    - Vector1_294CE1C3: 0.1
-    - Vector1_3037A1E3: 10
-    - Vector1_3D448F66: 0.5
-    - Vector1_96AD2792: 0
-    - Vector1_E55AE77E: 0.05
-    - Vector1_F12AB8EF: 0.5
-    - Vector1_F5FDBD7C: 0
+    - Vector1_21AA573: 0
+    - Vector1_294CE1C3: 0.4
+    - Vector1_3D448F66: 0.4
+    - Vector1_E55AE77E: 0.1
+    - Vector1_F12AB8EF: 0
+    - Vector1_F5FDBD7C: 1
     - _AmbientTranslucency: 2
     - _AnimateNormal: 1
     - _BackFaceSmoothness: 1
-    - _BillboardKwToggle: 0
-    - _BillboardShadowFade: 0.5
     - _BranchWind: 0
     - _BumpScale: 1
     - _ColorContrast: 1
     - _ColorMultiplier: 1
-    - _Cull: 0
     - _Culling: 0
     - _Cutoff: 0.5
     - _DebugBending: 0
@@ -149,7 +123,6 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HueVariationKwToggle: 0
     - _IsBark: 0
     - _LODTerrain: 1
     - _LeafTumbling: 0
@@ -158,36 +131,28 @@ Material:
     - _Metallic: 0
     - _Mode: 3
     - _NormalLerp: 1
-    - _NormalMapKwToggle: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _ShadowCulling: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SubsurfaceIndirect: 0.25
-    - _SubsurfaceKwToggle: 0
     - _SwapUVS: 0
     - _Tangents: 0
     - _TimeOffset: 0.25
     - _TranslucencyStrength: 1
     - _TumbleFrequency: 0.6
     - _TumbleStrength: 0.012
-    - _TwoSided: 0
     - _UVSec: 0
     - _UseArrays: 0
     - _UseDetails: 0
     - _ViewDependency: 0.7
-    - _WindQuality: 4
     - _ZWrite: 0
     m_Colors:
-    - Vector2_C0187560: {r: 0, g: 0, b: 0, a: 0}
-    - Vector3_CD0D6A66: {r: 0, g: 10, b: 0, a: 0}
+    - Vector3_CD0D6A66: {r: 0, g: 500, b: 0, a: 0}
     - _AdvancedEdgeBending: {r: 0.6, g: 1.3, b: 0, a: 0}
     - _AverageCol: {r: 1, g: 1, b: 1, a: 0.5}
     - _BaseWindMultipliers: {r: 0.6, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 0, g: 0.9, b: 0.8255172, a: 0.1}
-    - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
-    - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}

@@ -37,23 +37,23 @@ public class PlayerController : MonoBehaviour
     
         ReticuleRaycast();
 
-        if (Device.GetButtonDown(VRButton.One))
+       if (Device.GetButtonDown(VRButton.One))
          {
             MoveRaycast();  
         }
     }
 
     private void ReticuleRaycast()
-    {
+   {
         var hitPos = Vector3.zero;
 
         if (Physics.Raycast(_Pointer.Transform.position, _Pointer.Transform.forward, out RaycastHit hit, 100f, LayerToHit))
         {
-            hitPos = hit.point;
+          hitPos = hit.point;
         }
         else
-        {
-            hitPos = _Pointer.Transform.position + (_Pointer.Transform.forward * 15f);
+       {
+           hitPos = _Pointer.Transform.position + (_Pointer.Transform.forward * 15f);
         }
 
         _Reticule.transform.position = hitPos;
@@ -66,24 +66,24 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(pointer.Transform.position, pointer.Transform.forward, out RaycastHit hit, 100f, TeleportLayer))
         {
            
-            if (_teleportRoutine != null)
-                return;
-
+           if (_teleportRoutine != null)
+               return;
+   
             _teleportRoutine = StartCoroutine(TeleportCoro(hit.point));
         }
-    }
+  }
     
 
 
     private IEnumerator TeleportCoro(Vector3 teleportPoint)
     {
-        ScreenFader.Instance.FadeToBlack(FadeTime);
+       ScreenFader.Instance.FadeToBlack(FadeTime);
 
-        yield return ScreenFader.Instance.WaitUntilFadeComplete();
+       yield return ScreenFader.Instance.WaitUntilFadeComplete();
 
-        transform.position = teleportPoint;
-        ScreenFader.Instance.FadeToClear(FadeTime);
+       transform.position = teleportPoint;
+       ScreenFader.Instance.FadeToClear(FadeTime);
 
-        _teleportRoutine = null;
-    }
+       _teleportRoutine = null;
+   }
 }
