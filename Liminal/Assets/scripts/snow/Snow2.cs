@@ -64,6 +64,6 @@ public class Snow2 : MonoBehaviour
         Material2.SetFloat("Vector1_87AA5796", _curSnowVal);
         Material3.SetFloat("Vector1_AE5F8890", _curSnowVal);
         
-        RenderSettings.fog = false;
+       // RenderSettings.fog = false;
     }
 }

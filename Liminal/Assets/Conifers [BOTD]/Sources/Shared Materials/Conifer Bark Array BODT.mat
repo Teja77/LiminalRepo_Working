@@ -10,7 +10,7 @@ Material:
   m_Name: Conifer Bark Array BODT
   m_Shader: {fileID: -6465566751694194690, guid: 8f5e94d0747aa1d4cb8c81451d231599,
     type: 3}
-  m_ShaderKeywords: _METALLICGLOSSMAP
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

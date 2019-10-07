@@ -4,23 +4,31 @@ using UnityEngine;
 
 public class LightDim : MonoBehaviour
 {
-    // Interpolate light color between two colors back and forth
-    float duration = 1.0f;
-    public float Hill;
-    public float End;
 
-
-    Light lt;
-
+    public Light lt;
+    public float max;
+    private float startTime;
+    // Use this for initialization
     void Start()
     {
         lt = GetComponent<Light>();
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
-        // set light color
-        float t = Time.deltaTime/2;
-        lt.intensity = Mathf.Clamp (Hill, End, t);
+        LightIntensity();
+    }
+    private void OnEnable()
+    {
+        startTime = Time.time;
+    }
+
+    void LightIntensity()
+    {
+        
+        lt.intensity = Mathf.Lerp(0f, max, (Time.time- startTime) / 30);
+        Debug.Log("LightIntensity =" + lt.intensity + Time.time);
     }
 }
