@@ -98,12 +98,12 @@ Material:
     - Vector1_829D94E9: 1.5
     - Vector1_8DD778B1: -1.01
     - Vector1_909A987: 10
-    - Vector1_A87DE66: 0
+    - Vector1_A87DE66: 0.1
     - Vector1_AC45717C: 0
     - Vector1_B7A73FA9: 10
-    - Vector1_D5319A04: 1
+    - Vector1_D5319A04: 0
     - Vector1_EC52D547: 1
-    - Vector1_FC03E501: 0
+    - Vector1_FC03E501: 0.17200017
     m_Colors:
     - Vector2_7422B3D1: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_8BF9C355: {r: 10, g: 10, b: 0, a: 0}

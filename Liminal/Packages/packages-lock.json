@@ -4,8 +4,8 @@
       "version": "https://github.com/LiminalVR/Liminal-SDK-Unity-Package.git",
       "depth": 0,
       "source": "git",
-      "hash": "73feba720cc549cba74acbe3417ddc4e0203e2b6",
-      "dependencies": {}
+      "dependencies": {},
+      "hash": "73feba720cc549cba74acbe3417ddc4e0203e2b6"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -149,7 +149,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.2.16",
+      "version": "1.2.17",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
