@@ -5,7 +5,7 @@ Optimised for working on oculus go
 
 Setup:
 
-if you do not have Git installed, Download Git https://git-scm.com/downloads
+If you do not have Git installed, Download Git https://git-scm.com/downloads
 Once git has been installed, open Comand Prompt and type git, it should recognize git.
 Confirm it by going opening command prompt (windows key > cmd ) then type git. It should give you a start with usage: git
 
