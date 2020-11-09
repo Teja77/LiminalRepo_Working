@@ -19,3 +19,8 @@ If this is your first time adding a git path to your environment variable, you m
 Alternatively, you can just restart your machine.
 
 
+After setting up the project in play mode you will see 3 Chakras which upon clicking will simulate environment changes
+
+some environment changes might be subtle.
+
+enjoy....
